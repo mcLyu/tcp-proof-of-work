@@ -55,3 +55,17 @@ but in this implementation, the PoW challenge and solution are passed as a part 
 Main goal of 'DDoS protection' here is to show how PoW hashcash can be used to protect from DDoS attacks.
 This repository contains a simple implementation of DDoS protection based on the number of active connections, which increases difficulty of PoW challenge.  
 It uses active connection number instead of RPS just to make local tests easier and show impact of increasing of PoW difficulty.
+
+
+### Examples 
+- This example shows normal program execution with 1 client
+![proof-of-work-make-start](https://github.com/user-attachments/assets/b741b0d4-1557-41b4-aecd-33612694509f)
+
+- This example shows execution of program with 5 clients and increasing hashcash difficulty based on active connections number.
+![proof-of-work](https://github.com/user-attachments/assets/5a1119e4-6b1e-482a-befc-4b2ed9a35343)
+
+### Possible improvements
+This repo is the test task implementation so next improvements could be done to make this solution more reusable:
+- Parametrization and config-files for setting port, hosts, algorithm params
+- Go algorithm interfaces to make possible implementations of other PoW algorithms
+- Custom formatting logger (instead of repeating '\n' in fmt.Printf())
