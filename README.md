@@ -23,7 +23,7 @@ $ git clone https://github.com/mcLyu/tcp-proof-of-work.git
 ## Requirements
 + [Go 1.23+](https://go.dev/dl/) 
 + [Docker](https://docs.docker.com/engine/install/) 
-+ [Make utility](https://www.gnu.org/software/make/) in case you want to use the Makefile
++ [Make utility](https://www.gnu.org/software/make/) in case you want to use the Makefile (otherwise use docker-compose commands from Makefile)
 
 ## Run the project
 
